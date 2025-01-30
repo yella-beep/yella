@@ -1,0 +1,108 @@
+/* about.css */
+
+/* Consistent base styles */
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    color: #FFFFFF;
+    background-color: #007BFF; /* Blue color for the header */
+    border-bottom-right-radius: 1em;
+    padding: 10px;
+    margin: 20px 15px;
+}
+
+/* About specific styling */
+p {
+    color: #333;
+    margin: 15px 30px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 30px;
+}
+
+li {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #0057B7;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateX(10px);
+    background-color: #fff3cd;
+}
+
+li::before {
+    content: "•";
+    color: #FFD700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    p {
+        margin: 10px 15px;
+    }
+
+    ul {
+        margin: 20px 15px;
+    }
+
+    li {
+        padding: 10px;
+        margin: 8px 0;
+    }
+}

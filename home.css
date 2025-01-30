@@ -1,0 +1,83 @@
+/* home.css */
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container styling */
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    color: #FFFFFF;
+    background-color: #FFD700;
+    border-bottom-right-radius: 1em;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Content styling */
+p {
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

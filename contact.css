@@ -1,0 +1,70 @@
+/* contact.css */
+
+/* Consistent base styles */
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    color: #FFFFFF;
+    background-color: #FFD700; /* Green color for the header */
+    border-bottom-right-radius: 1em;
+    padding: 10px;
+    margin: 20px 15px;
+}
+
+/* Contact specific styling */
+p {
+    color: #333;
+    margin: 15px 30px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    p {
+        margin: 10px 15px;
+    }
+}
